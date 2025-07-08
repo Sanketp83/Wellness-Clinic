@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinic</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/v987-18a.jpg"
+      type="image/x-icon"
+    />
+
+    <!-- ✅ FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- ✅ Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+    <!-- ✅ Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- ✅ jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="logo"><h1>Wellness Clinic</h1></a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button
+              class="dark-toggle"
+              id="dark-toggle"
+              title="Toggle dark mode"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+          </ul>
+          <button class="burger" id="burger-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-left">
+          <h1>Your Family’s Health, Our Priority</h1>
+          <p>
+            Modern medical care with a personal touch in Sydney, <br />
+            Australia.
+          </p>
+          <a href="tel:+917620157935" class="btn">Book Appointment</a>
+        </div>
+        <div class="hero-right">
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1631507623112-0092cef9c70d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Clinic Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DOCTOR SECTION ===== -->
+    <section id="about" class="doctor-section">
+      <div class="container doctors">
+        <div class="doctor-card">
+          <div class="doc-img" id="maledr">
+            <img
+              src="https://as1.ftcdn.net/v2/jpg/01/34/80/78/1000_F_134807865_VPwSUVHmmIOAea48NjdTp3YYSEhG1ZmM.jpg"
+              alt="Dr. John"
+            />
+          </div>
+          <h3>Dr. John Brown</h3>
+          <p>
+            B.H.M.S <br />
+            Reg no. :- 01234
+          </p>
+        </div>
+        <div class="doctor-card">
+          <div class="doc-img">
+            <img
+              src="https://images.pexels.com/photos/8376277/pexels-photo-8376277.jpeg"
+              alt="Dr. Katherine"
+            />
+          </div>
+          <h3>Dr. Katherine Langford</h3>
+          <p>
+            B.H.M.S <br />
+            Reg no. :- 98765
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-box">🩺 General Checkup</div>
+          <div class="service-box">🧪 Lab Tests</div>
+          <div class="service-box">❤️ ECG/BP</div>
+          <div class="service-box">💉 Injections</div>
+          <div class="service-box">👨‍👩‍👧‍👦 Family Care</div>
+          <div class="service-box">🧬 Vaccinations</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <div class="carousel-gallery" id="gallery">
+      <h2>Our Treatment</h2>
+      <div class="custom-nav">
+        <button class="swiper-prev">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="swiper-next">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <a
+              href="https://twachaskin.com/wp-content/uploads/2023/03/Pigmentation-Treatment-Twacha-Aesthetic-Skin-Clinic.jpg"
+              data-fancybox="gallery"
+            >
+              <div class="image">
+                <img
+                  src="https://twachaskin.com/wp-content/uploads/2023/03/Pigmentation-Treatment-Twacha-Aesthetic-Skin-Clinic.jpg"
+                  alt="Gallery Image 1"
+                />
+                <div class="overlay">
+                  <em class="mdi mdi-magnify-plus"></em>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_dl8vTTbYTFIgMETeRTHoLaSq0glkVjaVQ&s"
+              data-fancybox="gallery"
+            >
+              <div class="image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_dl8vTTbYTFIgMETeRTHoLaSq0glkVjaVQ&s"
+                  alt="Gallery Image 2"
+                />
+                <div class="overlay">
+                  <em class="mdi mdi-magnify-plus"></em>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://www.newdelhidentalclinic.com/wp-content/uploads/2024/09/1.jpg"
+              data-fancybox="gallery"
+            >
+              <div class="image">
+                <img
+                  src="https://www.newdelhidentalclinic.com/wp-content/uploads/2024/09/1.jpg"
+                  alt="Gallery Image 3"
+                />
+                <div class="overlay">
+                  <em class="mdi mdi-magnify-plus"></em>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://twachaskin.com/wp-content/uploads/2023/03/Hair-Dandruff-Treatment-Twacha-Aesthetic-Hair-Treatments-Clinic.jpg"
+              data-fancybox="gallery"
+            >
+              <div class="image">
+                <img
+                  src="https://twachaskin.com/wp-content/uploads/2023/03/Hair-Dandruff-Treatment-Twacha-Aesthetic-Hair-Treatments-Clinic.jpg"
+                  alt="Gallery Image 4"
+                />
+                <div class="overlay">
+                  <em class="mdi mdi-magnify-plus"></em>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://premierskinclinic.com/wp-content/uploads/2024/02/Photos-show-a-womans-scalp-before-and-after-KeraLase-treatment.png"
+              data-fancybox="gallery"
+            >
+              <div class="image">
+                <img
+                  src="https://premierskinclinic.com/wp-content/uploads/2024/02/Photos-show-a-womans-scalp-before-and-after-KeraLase-treatment.png"
+                  alt="Gallery Image 5"
+                />
+                <div class="overlay">
+                  <em class="mdi mdi-magnify-plus"></em>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="https://ivoryaesthetics.com/wp-content/uploads/2024/08/Picture2.png"
+              data-fancybox="gallery"
+            >
+              <div class="image">
+                <img
+                  src="https://ivoryaesthetics.com/wp-content/uploads/2024/08/Picture2.png"
+                  alt="Gallery Image 6"
+                />
+                <div class="overlay">
+                  <em class="mdi mdi-magnify-plus"></em>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Testimonials of Patients-->
+    <section class="carousel-section">
+      <div class="carousel-wrapper">
+        <h2>Patients Feedback</h2>
+        <div class="carousel-track">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fHww"
+              alt=""
+            />
+            <h3>Mark Wood</h3>
+            <p>
+              I got treated very well thanks to <br />
+              them!
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1564564244660-5d73c057f2d2?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG1hbnxlbnwwfDB8MHx8fDA%3D"
+              alt=""
+            />
+            <h3>Cameron Green</h3>
+            <p>I had a knee Issue it got resolved by Doctors help!</p>
+          </div>
+          <div class="card">
+            <img
+              src="
+              https://plus.unsplash.com/premium_photo-1690086519096-0594592709d3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fG1hbnxlbnwwfDB8MHx8fDA%3D"
+              alt=""
+            />
+            <h3>Lauren Bell</h3>
+            <p>I had issues with my Nails it got resolved by Doctors help!</p>
+          </div>
+          <div class="card">
+            <img
+              src="
+              https://plus.unsplash.com/premium_photo-1705018500344-450a9e2d4c56?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdvbWFufGVufDB8MHwwfHx8MA%3D%3D"
+              alt=""
+            />
+            <h3>Healy Matthews</h3>
+            <p>I hade issue with my back it got resolved with Doctors help!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-content">
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.0808980310826!2d144.95452151092954!3d-37.81687007185787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c478bc5af%3A0xf9e63d7e401352d6!2sExchange%20Tower%2C%20suite%20415%2C%20Level%204%2F530%20Little%20Collins%20St%2C%20Melbourne%20VIC%203008%2C%20Australia!5e1!3m2!1sen!2sin!4v1751877921851!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact-links">
+            <p>
+              📍 suite 415, Level 4, 530 Little Collins St the exchange tower,
+              Melbourne VIC 3000, Australia
+            </p>
+            <p>📞 <a href="tel:+917620157935">+07 3803 6136</a></p>
+            <p>
+              <i class="fa-brands fa-instagram" style="color: #74c0fc"></i>
+              <a href="https://instagram.com/" target="_blank">Instagram</a>
+            </p>
+            <p>
+              <i class="fa-brands fa-whatsapp" style="color: #63e6be"></i>
+              <a href="https://wa.me/" target="_blank">WhatsApp</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <a href="https://x.com/wittysanket" target="_blank"
+          ><p>Made with ❤️ by Witty.Sanket</p></a
+        >
+      </div>
+    </footer>
+
+    <!-- ===== Custom Script ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
