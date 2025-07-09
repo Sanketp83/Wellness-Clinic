@@ -466,7 +466,7 @@ h1 span {
   color: #333;
 }
 .card h3 {
-  color: var(--white);
+  color: var(#333);
 }
 @media (max-width: 600px) {
   .logo h1 {
